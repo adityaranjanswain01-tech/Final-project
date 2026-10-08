@@ -1,4 +1,4 @@
-# Final Project
+#Shop_Shpere
 
 A full-stack web application developed using **Python and Django**. The project provides a structured web interface with backend functionality, database integration, user interaction, and dynamic content management.
 
@@ -20,10 +20,8 @@ A full-stack web application developed using **Python and Django**. The project 
 * **Django**
 * **HTML5**
 * **CSS3**
-* **JavaScript**
 * **SQLite**
-* **Git & GitHub**
-
+* 
 ## 📂 Project Structure
 
 ```text
@@ -36,7 +34,6 @@ Final-Project/
 │
 ├── static/
 │   ├── css/
-│   ├── js/
 │   └── images/
 │
 ├── templates/
