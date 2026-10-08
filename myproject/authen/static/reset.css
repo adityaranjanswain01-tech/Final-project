@@ -1,0 +1,131 @@
+h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--yellow);
+  text-align: center;
+  margin: 50px 0 6px;
+}
+
+/* Error Message */
+
+form > *:not(label):not(input):not(button):not(br):first-of-type {
+  display: block;
+  color: var(--red);
+  font-size: 0.85rem;
+  text-align: center;
+  margin-bottom: 12px;
+  background: rgba(230,57,70,0.08);
+  border-radius: var(--radius);
+  padding: 8px 12px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Form Container */
+
+form {
+  background: var(--card-bg);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--radius-lg);
+  padding: 38px;
+  max-width: 420px;
+  margin: 30px auto 60px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+form br {
+  display: none;
+}
+
+/* Labels */
+
+form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+form label:first-of-type {
+  margin-top: 0;
+}
+
+/* Input Fields */
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+  width: 100%;
+  padding: 12px 14px;
+  background: #3a3a3a;
+  border: 1.5px solid #666;
+  border-radius: var(--radius);
+  color: #ffffff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  outline: none;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form input[type="email"]:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 3px rgba(245,197,24,0.15);
+}
+
+/* Placeholder */
+
+form input::placeholder {
+  color: #cfcfcf;
+  opacity: 1;
+}
+
+/* Readonly Fields */
+
+form input[readonly] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Submit Button */
+
+form button[type="submit"] {
+  width: 100%;
+  margin-top: 26px;
+  padding: 13px;
+  background: var(--red);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background: var(--yellow);
+  color: #000;
+}
+
+/* Responsive */
+
+@media(max-width: 500px){
+
+  form{
+    width: 90%;
+    padding: 25px;
+  }
+
+  h1{
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+}

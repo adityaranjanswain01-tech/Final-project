@@ -1,0 +1,110 @@
+center{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+/* Error Message */
+
+center > :first-child:not(form){
+    color:red;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+/* Heading */
+
+h2{
+    text-align:center;
+    color:var(--yellow);
+    font-size:2rem;
+    letter-spacing:3px;
+    margin-top:50px;
+}
+
+/* Form */
+
+center > form{
+    background:var(--card-bg);
+    border:1.5px solid var(--gray-border);
+    border-radius:var(--radius-lg);
+    padding:38px;
+    width:100%;
+    max-width:400px;
+    margin:30px auto;
+    box-shadow:0 8px 40px rgba(0,0,0,.5);
+    text-align:left;
+}
+
+center > form::before{
+    content:"Create a strong password for your account";
+    display:block;
+    color:var(--white-dim);
+    font-size:.9rem;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+center > form label{
+    display:block;
+    margin-bottom:8px;
+    /* color:white; */
+    font-size:.85rem;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+
+/* Password Field */
+
+center > form input[type="password"]{
+    width:100%;
+    padding:12px;
+    background:#3a3a3a;
+    border:1px solid #666;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    outline:none;
+}
+
+center > form input[type="password"]::placeholder{
+    color:#cccccc;
+}
+
+center > form input[type="password"]:focus{
+    border-color:var(--yellow);
+    box-shadow:0 0 0 3px rgba(245,197,24,.15);
+}
+
+/* Button */
+
+center > form button{
+    width:100%;
+    margin-top:25px;
+    padding:12px;
+    background:var(--yellow);
+    color:black;
+    border:none;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+center > form button:hover{
+    background:var(--red);
+    color:white;
+}
+
+/* Mobile */
+
+@media(max-width:500px){
+
+    h2{
+        font-size:1.5rem;
+    }
+
+    center > form{
+        width:90%;
+        padding:25px;
+    }
+}

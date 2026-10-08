@@ -1,0 +1,26 @@
+{% extends 'main.html' %}
+    {% load static %}
+    {% block style %}
+    <link rel="stylesheet" href="{%  static 'reset.css' %}">    
+    {% endblock %}
+
+{% block content %}
+<h1>reset password </h1>
+{{error}}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label for="">Username:</label>
+        <input type="text" name="username" value="{{request.user.username}}" id="" readonly> <br><br>
+
+        {% if new %}
+            <label for="">New Password:</label>
+            <input type="password" name="new_pass" id=""> <br><br>
+        {% else %}
+            <label for="">Old Password:</label>
+            <input type="password" name="old_pass" id=""> <br><br>
+        {% endif %}
+
+        <button type="submit">SUBMIT</button>
+    </form>
+</center>
+{% endblock %}

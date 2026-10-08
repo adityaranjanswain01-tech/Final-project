@@ -1,0 +1,43 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'know_us.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="know-us-hero">
+  <h1>WHO WE ARE</h1>
+  <p>We are a passionate team dedicated to bringing you the best products at unbeatable prices. Founded with a simple belief — great shopping should be fast, affordable, and enjoyable for everyone.</p>
+</div>
+
+<div class="know-us-grid">
+
+  <div class="know-card">
+    <div class="icon">🎯</div>
+    <h3>OUR MISSION</h3>
+    <p>To make quality products accessible to every household by cutting out the middleman and delivering directly to your door.</p>
+  </div>
+
+  <div class="know-card">
+    <div class="icon">🛡️</div>
+    <h3>OUR VALUES</h3>
+    <p>Honesty, transparency, and customer-first thinking drive every decision we make — from sourcing to delivery.</p>
+  </div>
+
+  <div class="know-card">
+    <div class="icon">🚀</div>
+    <h3>OUR STORY</h3>
+    <p>Started in 2020 from a small garage, we've grown into a trusted platform serving thousands of happy customers across the country.</p>
+  </div>
+
+  <div class="know-card">
+    <div class="icon">🤝</div>
+    <h3>OUR PROMISE</h3>
+    <p>Every product is quality-checked before it reaches you. Not happy? We'll make it right — no questions asked.</p>
+  </div>
+
+</div>
+
+{% endblock %}

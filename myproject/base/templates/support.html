@@ -1,0 +1,64 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block style %}
+<link rel="stylesheet" href="{% static 'support.css' %}">
+{% endblock %}
+
+{% block content %}
+
+<div class="support-hero">
+  <h1>SUPPORT</h1>
+  <p>We're here to help. Reach out through any channel below and we'll get back to you as soon as possible.</p>
+</div>
+
+<div class="support-grid">
+
+  <div class="support-card">
+    <div class="icon">📧</div>
+    <h3>EMAIL US</h3>
+    <p>Send us your query and we'll respond within 24 hours on business days.</p>
+    <a href="mailto:support@yourstore.com">support@yourstore.com</a>
+  </div>
+
+  <div class="support-card">
+    <div class="icon">📞</div>
+    <h3>CALL US</h3>
+    <p>Speak directly with our support team Monday – Saturday, 9 AM to 6 PM.</p>
+    <a href="tel:+911234567890">+91 12345 67890</a>
+  </div>
+
+  <div class="support-card">
+    <div class="icon">💬</div>
+    <h3>LIVE CHAT</h3>
+    <p>Chat with us in real-time for quick answers to order and product questions.</p>
+    <a href="#">Start Chat</a>
+  </div>
+
+</div>
+
+<div class="faq-section">
+  <h2>COMMON QUESTIONS</h2>
+
+  <div class="faq-item">
+    <h4>How do I track my order?</h4>
+    <p>Once your order is shipped, you'll receive an email with a tracking link. You can also check your order status from your profile page.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>What is your return policy?</h4>
+    <p>We accept returns within 7 days of delivery for unused items in original packaging. Contact us to initiate a return.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>How long does delivery take?</h4>
+    <p>Standard delivery takes 3–5 business days. Express options are available at checkout for select pin codes.</p>
+  </div>
+
+  <div class="faq-item">
+    <h4>Can I change or cancel my order?</h4>
+    <p>Orders can be modified or cancelled within 1 hour of placing them. After that, please contact our support team directly.</p>
+  </div>
+</div>
+
+{% endblock %}

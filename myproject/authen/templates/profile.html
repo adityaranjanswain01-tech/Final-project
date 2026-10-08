@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+    {% load static %}
+    {% block style %}
+    <link rel="stylesheet" href="{%  static 'profile.css' %}">    
+    {% endblock %}
+
+
+{% block content %}
+<center>
+    <h1>PROFILE PAGE</h1>
+    <h1>
+        User:  {{request.user}}<br>
+        Verified: {{request.user.is_authenticated}} <br>
+        First_Name: {{request.user.first_name}} <br>
+        Last_Name:  {{request.user.last_name}}<br>
+        Email:  {{request.user.email}}<br>
+        Username:  {{request.user.username}}<br>
+    </h1>
+    <br>
+    <a href="{% url 'reset' %}">CHANGE PASSWORD</a><br>
+    <a href="{% url 'update' %}">UPDATE PROFILE</a>
+
+</center>
+{% endblock %}

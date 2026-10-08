@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+    {% load static %}
+    {% block style %}
+    <link rel="stylesheet" href="{%  static 'register.css' %}">    
+    {% endblock %}
+
+{% block content %}
+<center>
+    <form action="" method="POST">
+        {{error}}
+        {% csrf_token %}
+        <label for="">First Name</label>
+        <input type="text" name="fname" id=""><br><br>
+
+        <label for="">Lastname</label>
+        <input type="text" name="lname" id=""><br><br>
+
+        <label for="">Email</label>
+        <input type="email" name="email" id=""><br>
+
+        <label for="">Username</label>
+        <input type="text" name="username" id=""><br><br>
+
+        <label for="">Password</label>
+        <input type="password" name="password" id=""><br>
+        
+        <button type="submit">Submit</button>
+
+        <span>Already have an account.<a href="{% url 'login_' %}"> Login/Sign IN</a></span>
+    </form>
+</center>
+{% endblock %}

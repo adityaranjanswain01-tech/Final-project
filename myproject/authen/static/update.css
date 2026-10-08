@@ -1,0 +1,74 @@
+h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  letter-spacing: 4px;
+  color: var(--yellow);
+  text-align: center;
+  margin: 50px 0 6px;
+}
+
+form {
+  background: var(--card-bg);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--radius-lg);
+  padding: 38px;
+  max-width: 440px;
+  margin: 30px auto 60px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+  text-align: left;
+}
+
+form br { display: none; }
+
+form label {
+  display: block;
+  margin-top: 18px;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+form label:first-of-type { margin-top: 0; }
+
+form input[type="text"],
+form input[type="email"] {
+  width: 100%;
+  padding: 11px 14px;
+  background: var(--gray);
+  border: 1.5px solid var(--gray-border);
+  border-radius: var(--radius);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+form input[type="text"]:not([disabled]):focus,
+form input[type="email"]:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 3px rgba(245,197,24,0.12);
+}
+
+form button[type="submit"] {
+  width: 100%;
+  margin-top: 26px;
+  padding: 13px;
+  background: var(--yellow);
+  color: var(--black);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  transition: background 0.22s ease, transform 0.22s ease, box-shadow 0.22s ease;
+}
+form button[type="submit"]:hover {
+  background: var(--yellow-dim);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(245,197,24,0.28);
+}

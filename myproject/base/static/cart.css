@@ -1,0 +1,112 @@
+/* =============================================
+   CART.CSS — Shopping Cart Page
+   ============================================= */
+
+center > h1:first-child {
+  font-family: var(--font-display);
+  font-size: 2.6rem;
+  color: var(--yellow);
+  letter-spacing: 5px;
+  margin: 40px 0 30px;
+}
+
+/* ── Cart Table ── */
+table {
+  width: 90%;
+  max-width: 1100px;
+  border-collapse: collapse;
+  margin: 0 auto 30px;
+  background: var(--card-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: none !important;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.4);
+  border-radius: 20px;
+}
+
+table th {
+  background: var(--dark);
+  color: var(--yellow);
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 14px 18px;
+  border-bottom: 2px solid var(--yellow);
+  text-align: left;
+}
+
+table td {
+  padding: 13px 18px;
+  color: var(--white-dim);
+  font-size: 0.9rem;
+  border-bottom: 1px solid var(--gray-border);
+  vertical-align: middle;
+}
+
+table tr:last-child td { border-bottom: none; }
+
+table tr:hover td {
+  background: rgba(245,197,24,0.04);
+  color: var(--white);
+}
+
+/* ── Quantity Controls ── */
+table td a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background: var(--gray);
+  color: var(--white);
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: background var(--transition), color var(--transition);
+  vertical-align: middle;
+}
+table td a:hover { background: var(--yellow); color: var(--black); }
+
+/* Remove link — red */
+table td:last-child a {
+  width: auto;
+  padding: 6px 14px;
+  border-radius: var(--radius);
+  background: rgba(230,57,70,0.15);
+  color: var(--red);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+table td:last-child a:hover {
+  background: var(--red);
+  /* color: #fff; */
+}
+
+/* ── Quantity display ── */
+table td > a + * { margin: 0 6px; }
+
+/* ── Total Price ── */
+center > h1:last-of-type {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--white);
+  letter-spacing: 2px;
+  margin: 20px 0 50px;
+}
+center > h1:last-of-type::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--yellow);
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 700px) {
+  table { width: 100%; font-size: 0.8rem; }
+  table th, table td { padding: 10px 10px; }
+}
