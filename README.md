@@ -1,4 +1,4 @@
-#Shop_Shpere
+# Shop_Shpere
 
 A full-stack web application developed using **Python and Django**. The project provides a structured web interface with backend functionality, database integration, user interaction, and dynamic content management.
 
@@ -163,16 +163,6 @@ db.sqlite3
 ```
 
 These are excluded using `.gitignore`.
-
-## 📸 Screenshots
-
-Add screenshots of your project here:
-
-```markdown
-![Home Page](screenshots/home.png)
-![Login Page](screenshots/login.png)
-![Dashboard](screenshots/dashboard.png)
-```
 
 ## 👨‍💻 Author
 
